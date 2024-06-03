@@ -10,6 +10,11 @@ body {
 header {
     background-color: #333;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -39,6 +44,7 @@ nav ul li a:hover {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-top: 100px; /* Ajustar el padding-top para evitar que el contenido se superponga con el header */
 }
 
 /* Estilo para la sección de héroe */
