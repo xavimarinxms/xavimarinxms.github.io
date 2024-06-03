@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavi Marín - Proyecto Musical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#main">Inicio</a></li>
+                <li><a href="#subscribe">Suscríbete</a></li>
+                <li><a href="#donate">Apoya</a></li>
+                <li><a href="#biography">Biografía</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#languages">Idiomas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <h1>Xavi Marín</h1>
+            <img src="https://via.placeholder.com/300" alt="Imagen de Xavi Marín" class="hero-image">
+            <div class="intro-text">
+                <p>Bienvenido a mi proyecto musical. Descarga mi libro gratuito y suscríbete para más actualizaciones.</p>
+                <a href="ruta/al/libro.pdf" class="btn-primary" download>Descargar Libro</a>
+                <a href="https://instagram.com/tu-cuenta" class="btn-instagram" target="_blank">
+                    <img src="instagram-logo.png" alt="Instagram">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <section id="biography">
+        <div class="container">
+            <h2>Biografía</h2>
+            <p>Hola, soy Xavi Marín. Soy un músico emergente con una pasión por la creación de melodías únicas y conmovedoras. Mi viaje musical comenzó a una edad temprana y desde entonces he estado dedicando mi vida a la música. Aquí puedes conocer más sobre mi historia y mi carrera.</p>
+        </div>
+    </section>
+
+    <section id="roadmap">
+        <div class="container">
+            <h2>Roadmap del Proyecto</h2>
+            <p>Conoce los próximos pasos y metas de mi proyecto musical:</p>
+            <ul>
+                <li>Lanzamiento del primer sencillo - Junio 2024</li>
+                <li>Gira de conciertos en Europa - Septiembre 2024</li>
+                <li>Lanzamiento del álbum debut - Diciembre 2024</li>
+                <li>Colaboraciones con otros artistas - 2025</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="subscribe">
+        <div class="container">
+            <h2>Suscríbete</h2>
+            <form action="https://tu-url-de-mailchimp" method="post">
+                <input type="email" name="EMAIL" placeholder="Introduce tu email" required>
+                <button type="submit" class="btn-secondary">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="donate">
+        <div class="container">
+            <h2>Apoya mi Proyecto</h2>
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="business" value="tu-email@ejemplo.com">
+                <input type="hidden" name="currency_code" value="USD">
+                <button type="submit" class="btn-secondary">Donar con PayPal</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <section id="languages">
+                <h2>Elige tu idioma</h2>
+                <a href="index_es.html">Español</a> | <a href="index_en.html">Inglés</a>
+            </section>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

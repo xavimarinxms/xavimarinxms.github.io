@@ -1,0 +1,160 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3a1719; /* Granate */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para la sección de héroe */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #3a1719; /* Granate */
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5a2326; /* Granate más claro */
+}
+
+.btn-instagram {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: #3a1719; /* Granate */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-instagram img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-instagram:hover {
+    background-color: #5a2326; /* Granate más claro */
+}
+
+/* Estilos para secciones de suscripción y donación */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+input[type="email"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin: 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.btn-secondary {
+    background-color: #3a1719; /* Granate */
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a2326; /* Granate más claro */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer #languages {
+    margin-top: 20px;
+}
+
+footer #languages a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 0 10px;
+}
+
+footer #languages a:hover {
+    color: #3a1719; /* Granate */
+}
