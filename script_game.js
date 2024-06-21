@@ -13,6 +13,14 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+document.addEventListener('touchstart', function() {
+    if (isGameOver) {
+        restartGame();
+    } else {
+        jump();
+    }
+});
+
 function jump() {
     if (!character.classList.contains('animate')) {
         character.classList.add('animate');
