@@ -1,0 +1,272 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* Gris oscuro */
+	color:#7a7a7a;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.left a{
+	color:white !important;
+	font-size: x-large;
+}
+.left {
+    margin-right: auto; /* Empuja este elemento hacia la izquierda */
+}
+
+.right-menu {
+    display: flex;
+}
+
+.right-menu li {
+    margin-left: 20px; /* Espacio entre las opciones a la derecha */
+}
+
+.menu a {
+    color: #AAAAAA;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #292929; /* Color de fondo al pasar el ratón por encima */
+	color:#7a7a7a;
+}
+
+.about a {
+    color: white;
+	font-weight: bold;
+    text-decoration: none;
+}
+.about a:hover {
+	color:white;
+}
+
+.music a {
+    color: black;
+	font-weight: bold;
+    text-decoration: none;
+}
+.music a:hover {
+	color:black;
+}
+
+.book a {
+    color: white;
+	font-weight: bold;
+    text-decoration: none;
+}
+.book a:hover {
+	color:white;
+}
+
+.gamez a {
+    color: black;
+	font-weight: bold;
+    text-decoration: none;
+}
+.gamez a:hover {
+	color:black;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-top: 0px; /* Ajusta este valor según la altura del header para evitar que el contenido se solape */
+    margin-bottom: 40px;
+}
+
+.about_detail {
+    margin-left: 5px;
+}
+
+
+h1 {
+    margin-top: 0;
+}
+
+header .social-links a img {
+    width: 20px;
+    height: 20px;
+}
+
+.about {
+    background-color: black; /* Color de fondo negro */
+    color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
+}
+
+.about .container {
+    padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+.large-text {
+    font-size: 72px;
+}
+
+.hello .container {
+    padding: 2% 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 100%; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+.music {
+    background-color: white; /*  #804000 Color de fondo negro */
+    color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
+}
+
+.music .container {
+    padding: 2% 33%; 
+}
+
+.book {
+    background-color: black; /* black Color de fondo negro */
+    color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
+}
+
+.book .container {
+    padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+.gamez .container {
+    padding: 2% 33%; 
+}
+.content-wrapper {
+    flex: 1;
+}
+
+footer {
+    background-color: #333; /* Gris oscuro */
+    text-align: center;
+	color:#7a7a7a;
+    padding: 10px 0;
+}
+/*********************************************/
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about_detail .about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about_detail .about-image {
+    width: 40%;
+    max-width: 500px;
+    height: auto;
+}
+
+.about-detail .about-text {
+    width: 60%;
+}
+
+.about-text h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .about-detail .about-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-detail .about-image, .about-detail .about-text {
+        width: 100%;
+    }
+}
+
+.game {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    border: 1px solid #000;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.character {
+    position: absolute;
+    left: 50%; /* Centro horizontalmente */
+    transform: translateX(-50%); /* Centro exacto */
+    bottom: 0;
+    width: 75px;
+    height: 50px;
+    background-image: url('assets/character.png');
+    background-size: cover;
+}
+
+.obstacle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 50px;
+    background-size: cover;
+	background-image: url('assets/obstacle.png');
+}
+
+#game-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Color de fondo inicialmente transparente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.5s ease; /* Transición suave para el cambio de opacidad */
+}
