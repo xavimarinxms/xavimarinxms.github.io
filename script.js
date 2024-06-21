@@ -1,9 +1,8 @@
-// script.js
 document.addEventListener("DOMContentLoaded", function() {
     console.log("JavaScript is loaded and ready to go!");
-    // Add your JavaScript here
+    updateCountdown(); // initial call to display countdown immediately
+    const interval = setInterval(updateCountdown, 1000);
 });
-// script.js
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -12,7 +11,10 @@ function updateCountdown() {
 
     if (distance < 0) {
         clearInterval(interval);
-        document.querySelector('.countdown').innerHTML = "¡Ya es 1 de septiembre!";
+        const countdownElement = document.querySelector('.countdown');
+        if (countdownElement) {
+            countdownElement.innerHTML = "¡Ya es 1 de septiembre!";
+        }
         return;
     }
 
@@ -21,11 +23,21 @@ function updateCountdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById('days').innerText = days;
-    document.getElementById('hours').innerText = hours;
-    document.getElementById('minutes').innerText = minutes;
-    document.getElementById('seconds').innerText = seconds;
-}
+    const daysElement = document.getElementById('days');
+    const hoursElement = document.getElementById('hours');
+    const minutesElement = document.getElementById('minutes');
+    const secondsElement = document.getElementById('seconds');
 
-const interval = setInterval(updateCountdown, 1000);
-updateCountdown(); // initial call to display countdown immediately
+    if (daysElement) {
+        daysElement.innerText = days;
+    }
+    if (hoursElement) {
+        hoursElement.innerText = hours;
+    }
+    if (minutesElement) {
+        minutesElement.innerText = minutes;
+    }
+    if (secondsElement) {
+        secondsElement.innerText = seconds;
+    }
+}
