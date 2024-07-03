@@ -270,3 +270,50 @@ footer {
     z-index: 1;
     transition: background-color 0.5s ease; /* Transición suave para el cambio de opacidad */
 }
+
+/*
+ /* Estilos para las secciones de la página principal */
+
+.home-section {
+    display: flex;
+    align-items: center;  /* Centra el contenido verticalmente */
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    /*height: 400px; */
+    /*width: 80%;  */ 
+    margin: 0 auto;  /* Centra la sección horizontalmente */
+    padding: 0;
+}
+
+.home-section .container {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.large-text {
+    font-size: 72px;
+    margin: 40px;
+}
+
+/* Colores específicos para cada sección */
+.about.home-section {
+    background-color: black;
+    color: white;
+}
+
+.music.home-section {
+    background-color: white;
+    color: black;
+}
+
+.book.home-section {
+    background-color: black;
+    color: white;
+}
+
+.gamez.home-section {
+    background-color: white;
+    color: black;
+}
+
+*/
