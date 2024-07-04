@@ -2,7 +2,16 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("JavaScript is loaded and ready to go!");
     updateCountdown(); // initial call to display countdown immediately
     const interval = setInterval(updateCountdown, 1000);
+    const menuToggle = document.querySelector('.menu-toggle');
+    const rightMenu = document.querySelector('.right-menu');
+
+    menuToggle.addEventListener('click', function() {
+        rightMenu.classList.toggle('active');
+    });
 });
+
+
+
 
 function updateCountdown() {
     const now = new Date().getTime();
