@@ -53,7 +53,7 @@ function checkCollision() {
     
     // Check if obstacle is within character bounds horizontally and if the character is not high enough
     if (obstacleLeft < gameWidth / 2 + characterWidth / 2 && obstacleRight > gameWidth / 2 - characterWidth / 2 && characterTop >= 150) {
-        alert('Game Over!');
+        //alert('Game Over!');
         isGameOver = true;
         obstacle.style.animation = 'none';
         obstacle.style.display = 'none';

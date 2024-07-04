@@ -34,7 +34,7 @@ nav {
     padding: 0;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .menu li {
@@ -51,6 +51,7 @@ nav {
 
 .right-menu {
     display: flex;
+	margin-left: auto; /* Asegura que el menú derecho se alinee a la derecha */
 }
 
 .right-menu li {
@@ -78,12 +79,12 @@ nav {
 }
 
 .music a {
-    color: black;
+    color: white;
 	font-weight: bold;
     text-decoration: none;
 }
 .music a:hover {
-	color:black;
+	color:white;
 }
 
 .book a {
@@ -96,12 +97,21 @@ nav {
 }
 
 .gamez a {
-    color: black;
+    color: white;
 	font-weight: bold;
     text-decoration: none;
 }
 .gamez a:hover {
-	color:black;
+	color:white;
+}
+
+.contact a {
+    color: white;
+	font-weight: bold;
+    text-decoration: none;
+}
+.contact a:hover {
+	color:white;
 }
 
 main {
@@ -128,8 +138,12 @@ header .social-links a img {
 }
 
 .about {
-    background-color: black; /* Color de fondo negro */
-    color: white;
+    /*background-color: black; */
+	background-image: url('img/background_about.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+    
+	color: white;
     width: 100%; /* Asegura que abarque todo el ancho */
     margin-left: 0; /* Anula cualquier margen izquierdo */
     padding: 20px 0; /* Espaciado interno vertical para el contenido */
@@ -141,18 +155,45 @@ header .social-links a img {
     margin: 0 auto; /* Centra el contenido dentro de la sección */
 }
 
-.large-text {
-    font-size: 72px;
+.contact {
+    /*background-color: black; */
+	background-image: url('img/background_contact.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+	
+    color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
 }
 
-.hello .container {
-    padding: 2% 33%; /* Espaciado interno para el contenido horizontal */
+.contact .container {
+    padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+.large-text {
+    font-size: 57px;
+}
+
+.container {
+    padding: 0% 45%; /* Espaciado interno para el contenido horizontal */
+    max-width: 100%; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+.hello {
+    padding: 2% 45%; /* Espaciado interno para el contenido horizontal */
     max-width: 100%; /* Opcional: limita el ancho máximo del contenido */
     margin: 0 auto; /* Centra el contenido dentro de la sección */
 }
 
 .music {
-    background-color: white; /*  #804000 Color de fondo negro */
+    /*background-color: black; */
+	background-image: url('img/background_music.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+	
     color: white;
     width: 100%; /* Asegura que abarque todo el ancho */
     margin-left: 0; /* Anula cualquier margen izquierdo */
@@ -160,11 +201,17 @@ header .social-links a img {
 }
 
 .music .container {
-    padding: 2% 33%; 
+    padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
 }
 
 .book {
-    background-color: black; /* black Color de fondo negro */
+    /*background-color: black; */
+	background-image: url('img/background_book.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+	
     color: white;
     width: 100%; /* Asegura que abarque todo el ancho */
     margin-left: 0; /* Anula cualquier margen izquierdo */
@@ -177,9 +224,27 @@ header .social-links a img {
     margin: 0 auto; /* Centra el contenido dentro de la sección */
 }
 
-.gamez .container {
-    padding: 2% 33%; 
+.gamez {
+    /*background-color: black; */
+	background-image: url('img/background_game.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+	
+    color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
 }
+
+.gamez .container {
+     padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+
+
+
 .content-wrapper {
     flex: 1;
 }
@@ -236,7 +301,8 @@ footer {
     height: 200px;
     border: 1px solid #000;
     overflow: hidden;
-    background-color: #fff;
+    /*background-color: #fff;*/
+	background-image: url('img/background_game.jpg');
 }
 
 .character {
@@ -291,29 +357,56 @@ footer {
 }
 
 .large-text {
-    font-size: 72px;
+    font-size: 57px;
     margin: 40px;
 }
 
 /* Colores específicos para cada sección */
 .about.home-section {
-    background-color: black;
+    /*background-color: black;*/
+	background-image: url('img/background_about.jpg');
     color: white;
 }
 
 .music.home-section {
-    background-color: white;
-    color: black;
+	background-image: url('img/background_music.jpg');
+    /*background-color: white;*/
+    color: white;
 }
 
 .book.home-section {
-    background-color: black;
+    background-image: url('img/background_book.jpg');
+	/*background-color: black;*/
     color: white;
 }
 
 .gamez.home-section {
-    background-color: white;
-    color: black;
+    /*background-color: white;
+    color: black;*/
+	background-image: url('img/background_game.jpg');
+    color: white;
 }
 
-*/
+.contact.home-section {
+    /*background-color: white;
+    color: black;*/
+	background-image: url('img/background_contact.jpg');
+    color: white;
+}
+
+ 
+.about, .music, .book, .gamez {
+    background-size: cover; /* Asegura que la imagen de fondo se ajuste correctamente */
+    /*background-repeat: no-repeat;*/
+    width: 100%;
+   /* margin: 0;*/
+    padding: 20px 0;
+}
+
+.container {
+    width: 100%; /* Cambiado de 90% a 100% */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0; /* Asegura que no haya padding extra que cause overflow */
+}
+ 
