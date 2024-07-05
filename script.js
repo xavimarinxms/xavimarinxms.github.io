@@ -10,9 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
-
-
 function updateCountdown() {
     const now = new Date().getTime();
     const countDownDate = new Date('September 1, 2024 00:00:00').getTime();
