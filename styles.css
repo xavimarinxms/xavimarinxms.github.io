@@ -291,8 +291,7 @@ footer {
 }
 
 .about_detail .about-image {
-    width: 40%;
-    max-width: 500px;
+    max-width: 50%;
     height: auto;
 }
 
@@ -488,7 +487,7 @@ footer {
 	.right-menu-index li {
         width: 100%;
         text-align: center;
-        margin: 0 0px;
+        margin: 0 00px;
         padding: 10px 0;
         border-bottom: 1px solid #444;
     }
@@ -513,4 +512,20 @@ footer {
     display: flex;
 }
 
- 
+ /* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center; /* Opcional, para centrar el texto en móviles */
+    }
+
+    .about-image {
+        width: 100%; /* Asegúrate de que la imagen ocupe el ancho del contenedor */
+        max-width: 100% !important; /* Ajusta según sea necesario */
+        margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    }
+
+    .about-text {
+        padding: 0 10px; /* Opcional, para agregar espacio lateral al texto */
+    }
+}
