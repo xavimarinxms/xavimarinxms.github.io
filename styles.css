@@ -529,3 +529,10 @@ footer {
         padding: 0 10px; /* Opcional, para agregar espacio lateral al texto */
     }
 }
+
+.countdown {
+	font-size: small;
+	color: blue;
+	font-weight: bold;
+}
+ 
