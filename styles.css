@@ -96,6 +96,15 @@ nav {
 	color:white;
 }
 
+.videoclip a {
+    color: white;
+	font-weight: bold;
+    text-decoration: none;
+}
+.videoclip a:hover {
+	color:white;
+}
+
 .book a {
     color: white;
 	font-weight: bold;
@@ -221,6 +230,24 @@ header .social-links img {
 }
 
 .music .container {
+    padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+.videoclip {
+    /*background-color: black; */
+	background-image: url('img/background_videoclip.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+	
+    color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
+}
+
+.videoclip .container {
     padding: 0 33%; /* Espaciado interno para el contenido horizontal */
     max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
     margin: 0 auto; /* Centra el contenido dentro de la sección */
@@ -393,6 +420,12 @@ footer {
     color: white;
 }
 
+.videoclip.home-section {
+	background-image: url('img/background_videoclip.jpg');
+    /*background-color: white;*/
+    color: white;
+}
+
 .book.home-section {
     background-image: url('img/background_book.jpg');
 	/*background-color: black;*/
@@ -414,7 +447,7 @@ footer {
 }
 
  
-.about, .music, .book, .gamez {
+.about, .music, .videoclip, .book, .gamez {
     background-size: cover; /* Asegura que la imagen de fondo se ajuste correctamente */
     /*background-repeat: no-repeat;*/
     width: 100%;
