@@ -1,0 +1,571 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* Gris oscuro */
+	color:#7a7a7a;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    /*justify-content: space-between;*/
+}
+
+.menu li {
+    margin: 0;
+}
+
+.left a{
+	color:white !important;
+	font-size: x-large;
+}
+.left {
+    margin-right: auto; /* Empuja este elemento hacia la izquierda */
+}
+
+.right-menu {
+    display: flex;
+	margin-left: auto; /* Asegura que el menú derecho se alinee a la derecha */
+}
+
+.right-menu li {
+    margin-left: 20px; /* Espacio entre las opciones a la derecha */
+}
+
+.right-menu-index{
+    display: flex;
+	margin-left: auto; /* Asegura que el menú derecho se alinee a la derecha */
+}
+
+.right-menu-index li {
+    margin-left: 20px; /* Espacio entre las opciones a la derecha */
+}
+
+.menu a {
+    color: #AAAAAA;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #292929; /* Color de fondo al pasar el ratón por encima */
+	color:#7a7a7a;
+}
+
+.about a {
+    color: white;
+	font-weight: bold;
+    text-decoration: none;
+}
+.about a:hover {
+	color:white;
+}
+
+.music a {
+    color: white;
+	font-weight: bold;
+    text-decoration: none;
+}
+.music a:hover {
+	color:white;
+}
+
+.videoclip a {
+    color: white;
+	font-weight: bold;
+    text-decoration: none;
+}
+.videoclip a:hover {
+	color:white;
+}
+
+.book a {
+    color: white;
+	font-weight: bold;
+    text-decoration: none;
+}
+.book a:hover {
+	color:white;
+}
+
+.gamez a {
+    color: white;
+	font-weight: bold;
+    text-decoration: none;
+}
+.gamez a:hover {
+	color:white;
+}
+
+.contact a {
+    color: white;
+	font-weight: bold;
+    text-decoration: none;
+}
+.contact a:hover {
+	color:white;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-top: 0px; /* Ajusta este valor según la altura del header para evitar que el contenido se solape */
+    margin-bottom: 40px;
+}
+
+.about_detail {
+    margin-left: 5px;
+}
+
+
+h1 {
+    margin-top: 0;
+}
+
+header .social-burguer img {
+    width: 20px;
+    height: 20px;
+	margin-left: 30px;
+}
+
+header .social-links a img {
+    width: 20px;
+    height: 20px;
+}
+header .social-links img {
+    width: 25px;
+    height: 25px;
+	margin-right: 30px;
+}
+
+.about {
+    /*background-color: black; */
+	background-image: url('img/background_about.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+    
+	color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
+}
+
+.about .container {
+    padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+.contact {
+    /*background-color: black; */
+	background-image: url('img/background_contact.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+	
+    color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
+}
+
+.contact .container {
+    padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+.large-text {
+    font-size: 57px;
+}
+
+.container {
+    padding: 0% 45%; /* Espaciado interno para el contenido horizontal */
+    max-width: 100%; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+.hello {
+    padding: 2% 45%; /* Espaciado interno para el contenido horizontal */
+    max-width: 100%; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+.music {
+    /*background-color: black; */
+	background-image: url('img/background_music.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+	
+    color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
+}
+
+.music .container {
+    padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+.videoclip {
+    /*background-color: black; */
+	background-image: url('img/background_videoclip.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+	
+    color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
+}
+
+.videoclip .container {
+    padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+.book {
+    /*background-color: black; */
+	background-image: url('img/background_book.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+	
+    color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
+}
+
+.book .container {
+    padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+.gamez {
+    /*background-color: black; */
+	background-image: url('img/background_game.jpg');
+	background-repeat: no-repeat; /* Hace que la imagen se repita */
+    background-size: 100% auto; /* Mantiene el tamaño original de la imagen */
+	
+    color: white;
+    width: 100%; /* Asegura que abarque todo el ancho */
+    margin-left: 0; /* Anula cualquier margen izquierdo */
+    padding: 20px 0; /* Espaciado interno vertical para el contenido */
+}
+
+.gamez .container {
+     padding: 0 33%; /* Espaciado interno para el contenido horizontal */
+    max-width: 1200px; /* Opcional: limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido dentro de la sección */
+}
+
+
+
+
+.content-wrapper {
+    flex: 1;
+}
+
+footer {
+    background-color: #333; /* Gris oscuro */
+    text-align: center;
+	color:#7a7a7a;
+    padding: 10px 0;
+}
+/*********************************************/
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about_detail .about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about_detail .about-image {
+    max-width: 50%;
+    height: auto;
+}
+
+.about-detail .about-text {
+    width: 60%;
+}
+
+.about-text h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .about-detail .about-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-detail .about-image, .about-detail .about-text {
+        width: 100%;
+    }
+}
+
+.game {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    border: 1px solid #000;
+    overflow: hidden;
+    /*background-color: #fff;*/
+	background-image: url('img/background_game.jpg');
+}
+
+.character {
+    position: absolute;
+    left: 50%; /* Centro horizontalmente */
+    transform: translateX(-50%); /* Centro exacto */
+    bottom: 0;
+    width: 75px;
+    height: 50px;
+    background-image: url('assets/character.png');
+    background-size: cover;
+}
+
+.obstacle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 50px;
+    background-size: cover;
+	background-image: url('assets/obstacle.png');
+}
+
+#game-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Color de fondo inicialmente transparente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.5s ease; /* Transición suave para el cambio de opacidad */
+}
+
+/*
+ /* Estilos para las secciones de la página principal */
+
+.home-section {
+    display: flex;
+    align-items: center;  /* Centra el contenido verticalmente */
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    /*height: 400px; */
+    /*width: 80%;  */ 
+    margin: 0 auto;  /* Centra la sección horizontalmente */
+    padding: 0;
+}
+
+.home-section .container {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.large-text {
+    font-size: 57px;
+    margin: 40px;
+}
+
+/* Colores específicos para cada sección */
+.about.home-section {
+    /*background-color: black;*/
+	background-image: url('img/background_about.jpg');
+    color: white;
+}
+
+.music.home-section {
+	background-image: url('img/background_music.jpg');
+    /*background-color: white;*/
+    color: white;
+}
+
+.videoclip.home-section {
+	background-image: url('img/background_videoclip.jpg');
+    /*background-color: white;*/
+    color: white;
+}
+
+.book.home-section {
+    background-image: url('img/background_book.jpg');
+	/*background-color: black;*/
+    color: white;
+}
+
+.gamez.home-section {
+    /*background-color: white;
+    color: black;*/
+	background-image: url('img/background_game.jpg');
+    color: white;
+}
+
+.contact.home-section {
+    /*background-color: white;
+    color: black;*/
+	background-image: url('img/background_contact.jpg');
+    color: white;
+}
+
+ 
+.about, .music, .videoclip, .book, .gamez {
+    background-size: cover; /* Asegura que la imagen de fondo se ajuste correctamente */
+    /*background-repeat: no-repeat;*/
+    width: 100%;
+   /* margin: 0;*/
+    padding: 20px 0;
+}
+
+.container {
+    width: 100%; /* Cambiado de 90% a 100% */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0; /* Asegura que no haya padding extra que cause overflow */
+}
+
+.menu-toggle {
+    display: none;
+}
+/* Ocultar el menú y mostrar el icono de hamburguesa por defecto en dispositivos móviles */
+@media (max-width: 768px) {
+    .right-menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Ajusta según la altura de tu header */
+        left: 0;
+        background-color: #333; /* Mismo color que el header */
+        z-index: 999;
+    }
+	
+	.right-menu-index{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Ajusta según la altura de tu header */
+        left: 0;
+        background-color: #333; /* Mismo color que el header */
+        z-index: 999;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: #AAAAAA;
+        font-size: 30px;
+        position: relative;
+        top: -3px;
+		margin-left: 5px;
+        right: 20px;
+    }
+
+    .right-menu-index li {
+        width: 100%;
+        text-align: center;
+        margin: 0 -150px;
+        padding: 10px 0;
+        border-bottom: 1px solid #444;
+    }
+
+
+    .right-menu li {
+        width: 100%;
+        text-align: center;
+        margin: 0 -150px;
+        padding: 10px 0;
+        border-bottom: 1px solid #444;
+    }
+	
+	.right-menu-index li {
+        width: 100%;
+        text-align: center;
+        margin: 0 00px;
+        padding: 10px 0;
+        border-bottom: 1px solid #444;
+    }
+
+    .right-menu-index li a {
+        display: block;
+        color: white;
+    }
+	
+	.right-menu-index li a {
+        display: block;
+        color: white;
+    }
+}
+
+/* Mostrar el menú cuando esté activo */
+.right-menu.active {
+    display: flex;
+}
+
+.right-menu-index.active {
+    display: flex;
+}
+
+ /* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center; /* Opcional, para centrar el texto en móviles */
+    }
+
+    .about-image {
+        width: 100%; /* Asegúrate de que la imagen ocupe el ancho del contenedor */
+        max-width: 100% !important; /* Ajusta según sea necesario */
+        margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    }
+
+    .about-text {
+        padding: 0 10px; /* Opcional, para agregar espacio lateral al texto */
+    }
+}
+
+.countdown {
+	font-size: small;
+	color: blue;
+	font-weight: bold;
+}
+ 
